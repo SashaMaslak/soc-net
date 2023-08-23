@@ -1,4 +1,6 @@
 .App {
   padding: 30px;
   display: flex;
+  justify-content: center;
+  font-size: 2rem;
 }
