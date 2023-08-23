@@ -5,5 +5,5 @@
   grid-template-columns: 2fr 10fr;
   width: 1200px;
   margin: auto;
-  /* grid-gap: 10px; */
+  grid-gap: 10px;
 }
