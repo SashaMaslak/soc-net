@@ -9,4 +9,120 @@
   height: 120px;
   object-fit: cover;
   overflow: hidden;
+  margin-bottom: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.userInfo {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.ava {
+  display: block;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.descr {
+  border-radius: 8px;
+  width: 100%;
+  padding: 8px;
+}
+
+.name {
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+.userData {
+  padding: 0;
+  margin: 0;
+  padding: 4px;
+  width: 100%;
+}
+
+.userData__item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.userData__rowName {
+  flex-basis: 25%;
+}
+
+.userData__rowData {
+  flex-basis: 75%;
+}
+
+.myPosts {
+  padding-left: 16px;
+  padding-right: 88px;
+}
+
+.newPost {
+  display: flex;
+  flex-direction: column;
+}
+
+.newPostTitle {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.newPostAdd {
+  margin-bottom: 10px;
+}
+
+.newPostField {
+  width: 100%;
+  min-height: 88px;
+  padding: 8px;
+  background-color: gainsboro;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.newPostBtn {
+  background-color: MediumSeaGreen;
+  text-align: center;
+  border-radius: 4px;
+  width: 100px;
+  height: 24px;
+  color: white;
+  border: 0px;
+  margin-left: auto;
+}
+
+.posts {
+  padding: 0;
+  padding-left: 8px;
+}
+
+.itemPosts {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.imgPosts {
+}
+
+.imgPostsNone {
+  background-color: orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+.post {
 }
