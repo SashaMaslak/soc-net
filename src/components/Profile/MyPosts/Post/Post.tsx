@@ -1,10 +1,12 @@
 import { useState } from "react"
 import { BiLike } from "react-icons/bi"
+import { BiDislike } from "react-icons/bi"
 import s from "./Post.module.css"
 
 type PostPropsType = {
   message: string
-  countPosts: number
+  countLikes: number
+  countDislikes: number
 }
 
 export const Post = (props: PostPropsType) => {
@@ -22,8 +24,12 @@ export const Post = (props: PostPropsType) => {
       </div>
       <div className={s.postOptions}>
         <p className={s.likePost}>
-          <BiLike className={s.likeIconPost} color="#777" size="20" />
-          <span className={s.countLikes}>{props.countPosts}</span>
+          <BiLike className={s.likeIconPost} color="MediumSeaGreen" size="20" />
+          <span className={s.countLikes}>{props.countLikes}</span>
+        </p>
+        <p className={s.likePost}>
+          <BiDislike className={s.likeIconPost} color="red" size="20" />
+          <span className={s.countLikes}>{props.countDislikes}</span>
         </p>
       </div>
     </li>

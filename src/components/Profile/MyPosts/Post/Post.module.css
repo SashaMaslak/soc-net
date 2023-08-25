@@ -17,7 +17,7 @@
 }
 
 .imgPostNone {
-  background-color: orange;
+  background-color: MediumSeaGreen;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -25,22 +25,24 @@
 }
 
 .textPost {
-  border: 1px solid orange;
+  border: 1px solid MediumSeaGreen;
   padding: 4px;
   border-radius: 4px;
   width: 100%;
 }
 
 .postOptions {
+  display: flex;
+  gap: 16px;
 }
 
 .likePost {
-  cursor: pointer;
   display: flex;
 }
 
 .likeIconPost {
-  margin-right: 8px;
+  cursor: pointer;
+  margin-right: 4px;
 }
 
 .countLikes {

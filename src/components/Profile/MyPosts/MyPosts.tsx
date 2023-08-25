@@ -14,9 +14,17 @@ export const MyPosts = () => {
         <button className={s.newPostBtn}>Send</button>
       </div>
       <ul className={s.posts}>
-        <Post message="Hi, how are you?" countPosts={20} />
-        <Post message="I am fine, thank you." countPosts={15} />
-        <Post message="It`s my first post." countPosts={30} />
+        <Post message="Hi, how are you?" countLikes={20} countDislikes={19} />
+        <Post
+          message="I am fine, thank you."
+          countLikes={15}
+          countDislikes={14}
+        />
+        <Post
+          message="It`s my first post."
+          countLikes={30}
+          countDislikes={29}
+        />
       </ul>
     </div>
   )

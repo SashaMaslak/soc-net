@@ -1,12 +1,10 @@
-import { useState } from "react"
 import s from "./Profile.module.css"
 import ava from "../../img/def_ava.jpg"
 import { MyPosts } from "./MyPosts/MyPosts"
 
 export const Profile = () => {
-  const [isAva] = useState(false)
   return (
-    <div className={s.content}>
+    <div>
       <div className={s.img}>
         <img
           src="https://img3.akspic.ru/attachments/crops/2/7/4/8/98472/98472-palmovye_ostrova-karibskij_bassejn-plyazh-palma-poberezhe-1920x1080.jpg"
