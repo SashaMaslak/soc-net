@@ -1,0 +1,40 @@
+.myPosts {
+  padding-left: 16px;
+  padding-right: 88px;
+}
+
+.newPost {
+  display: flex;
+  flex-direction: column;
+}
+
+.newPostTitle {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.newPostAdd {
+  margin-bottom: 10px;
+}
+
+.newPostField {
+  width: 100%;
+  min-height: 88px;
+  padding: 8px;
+  background-color: gainsboro;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.newPostBtn {
+  background-color: MediumSeaGreen;
+  text-align: center;
+  border-radius: 4px;
+  width: 100px;
+  height: 24px;
+  color: white;
+  border: 0px;
+  margin-left: auto;
+}

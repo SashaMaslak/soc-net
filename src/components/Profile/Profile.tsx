@@ -1,6 +1,7 @@
 import { useState } from "react"
 import s from "./Profile.module.css"
-import ava from "../img/def_ava.jpg"
+import ava from "../../img/def_ava.jpg"
+import { MyPosts } from "./MyPosts/MyPosts"
 
 export const Profile = () => {
   const [isAva] = useState(false)
@@ -39,43 +40,7 @@ export const Profile = () => {
           </ul>
         </div>
       </div>
-      <div className={s.myPosts}>
-        <div className={s.newPost}>
-          <p className={s.newPostTitle}>My posts</p>
-          <p className={s.newPostAdd}>Add new post:</p>
-          <textarea
-            placeholder="your news..."
-            className={s.newPostField}
-          ></textarea>
-          <button className={s.newPostBtn}>Send</button>
-        </div>
-        <ul className={s.posts}>
-          <li className={s.itemPosts}>
-            {isAva ? (
-              <img className={s.imgPosts} src="" alt="" />
-            ) : (
-              <div className={s.imgPostsNone}></div>
-            )}
-            <p className={s.post}>post1</p>
-          </li>
-          <li className={s.itemPosts}>
-            {isAva ? (
-              <img className={s.imgPosts} src="" alt="" />
-            ) : (
-              <div className={s.imgPostsNone}></div>
-            )}
-            <p className={s.post}>post2</p>
-          </li>
-          <li className={s.itemPosts}>
-            {isAva ? (
-              <img className={s.imgPosts} src="" alt="" />
-            ) : (
-              <div className={s.imgPostsNone}></div>
-            )}
-            <p className={s.post}>post3</p>
-          </li>
-        </ul>
-      </div>
+      <MyPosts />
     </div>
   )
 }
