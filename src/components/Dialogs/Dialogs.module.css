@@ -1,3 +1,23 @@
 .dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  display: block;
+  & .active {
+    color: goldenrod;
+  }
+}
+
+.item {
+  display: block;
+}
+
+.messages {
+  display: block;
+}
+
+.dialog {
   display: block;
 }
