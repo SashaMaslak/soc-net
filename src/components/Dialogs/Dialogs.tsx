@@ -1,5 +1,6 @@
-import React from "react"
 import s from "./Dialogs.module.css"
+import { DialogItem } from "./DialogItem/DialogItem"
+import { Messages } from "./Messages/Messages"
 
 type DialogsPropsType = {}
 
@@ -7,18 +8,18 @@ export function Dialogs(props: DialogsPropsType) {
   return (
     <div className={s.dialogs}>
       <ul className={s.dialogsItems}>
-        <li className={s.item + " " + s.active}>Vasya</li>
-        <li className={s.item}>Petya</li>
-        <li className={s.item}>Kolya</li>
-        <li className={s.item}>Nastya</li>
-        <li className={s.item}>Vanya</li>
+        <DialogItem name="Vasya" id="1" />
+        <DialogItem name="Petya" id="2" />
+        <DialogItem name="Kolya" id="3" />
+        <DialogItem name="Nastya" id="4" />
+        <DialogItem name="Vanya" id="5" />
       </ul>
       <ul className={s.messages}>
-        <li className={s.dialog}>Hi</li>
-        <li className={s.dialog}>How is your life?</li>
-        <li className={s.dialog}>Yo</li>
-        <li className={s.dialog}>Cool</li>
-        <li className={s.dialog}>Message</li>
+        <Messages message="Hi" />
+        <Messages message="How is your life?" />
+        <Messages message="Yo" />
+        <Messages message="Cool" />
+        <Messages message="My super Message" />
       </ul>
     </div>
   )
