@@ -2,6 +2,7 @@ import s from "./Messages.module.css"
 
 type MessagesPropsType = {
   message: string
+  id: string
 }
 
 export const Messages = (props: MessagesPropsType) => {

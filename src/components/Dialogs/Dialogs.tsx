@@ -5,21 +5,33 @@ import { Messages } from "./Messages/Messages"
 type DialogsPropsType = {}
 
 export function Dialogs(props: DialogsPropsType) {
+  const dialogsData = [
+    { id: "1", name: "Vasya" },
+    { id: "2", name: "Petya" },
+    { id: "3", name: "Kolya" },
+    { id: "4", name: "Nastya" },
+    { id: "5", name: "Vanya" },
+  ]
+
+  const messagesData = [
+    { id: "1", message: "Hi" },
+    { id: "2", message: "How is your life?" },
+    { id: "3", message: "It`s my first post" },
+    { id: "4", message: "I feel good" },
+    { id: "5", message: "My super Message" },
+  ]
+
   return (
     <div className={s.dialogs}>
       <ul className={s.dialogsItems}>
-        <DialogItem name="Vasya" id="1" />
-        <DialogItem name="Petya" id="2" />
-        <DialogItem name="Kolya" id="3" />
-        <DialogItem name="Nastya" id="4" />
-        <DialogItem name="Vanya" id="5" />
+        {dialogsData.map(i => (
+          <DialogItem name={i.name} id={i.id} />
+        ))}
       </ul>
       <ul className={s.messages}>
-        <Messages message="Hi" />
-        <Messages message="How is your life?" />
-        <Messages message="Yo" />
-        <Messages message="Cool" />
-        <Messages message="My super Message" />
+        {messagesData.map(i => (
+          <Messages message={i.message} id={i.id} />
+        ))}
       </ul>
     </div>
   )
