@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/soc-net/static/css/main.2dd2e4e4.css",
+    "main.js": "/soc-net/static/js/main.68d4e1f1.js",
+    "static/js/787.e2555fe2.chunk.js": "/soc-net/static/js/787.e2555fe2.chunk.js",
+    "static/media/logo.png": "/soc-net/static/media/logo.cd5de850250cd3272257.png",
+    "index.html": "/soc-net/index.html",
+    "main.2dd2e4e4.css.map": "/soc-net/static/css/main.2dd2e4e4.css.map",
+    "main.68d4e1f1.js.map": "/soc-net/static/js/main.68d4e1f1.js.map",
+    "787.e2555fe2.chunk.js.map": "/soc-net/static/js/787.e2555fe2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dd2e4e4.css",
+    "static/js/main.68d4e1f1.js"
+  ]
+}
