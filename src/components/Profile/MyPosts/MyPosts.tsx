@@ -1,26 +1,15 @@
+import { createRef } from "react"
 import s from "./MyPosts.module.css"
 import { Post } from "./Post/Post"
+import { FormAddPost } from "../../FormAddPost/FormAddPost"
+import state from "../../redux/state"
 
 export const MyPosts = () => {
-  const postsData = [
-    { id: "1", message: "Hi, how are you?", countLikes: 20, countDislikes: 19 },
-    {
-      id: "2",
-      message: "I am fine, thank you.",
-      countLikes: 15,
-      countDislikes: 14,
-    },
-    {
-      id: "3",
-      message: "It`s my first post.",
-      countLikes: 30,
-      countDislikes: 29,
-    },
-  ]
-
-  const posts = postsData.map(i => (
+  const { posts } = state
+  const postsRender = posts.map(i => (
     <Post
-      message={i.message}
+      key={i.id}
+      message={i.post}
       countLikes={i.countLikes}
       countDislikes={i.countDislikes}
     />
@@ -28,16 +17,12 @@ export const MyPosts = () => {
 
   return (
     <div className={s.myPosts}>
-      <div className={s.newPost}>
-        <p className={s.newPostTitle}>My posts</p>
-        <p className={s.newPostAdd}>Add new post:</p>
-        <textarea
-          placeholder="your news..."
-          className={s.newPostField}
-        ></textarea>
-        <button className={s.newPostBtn}>Send</button>
+      <div>
+        <p className={s.newPostTitle}>My posts:</p>
+        <FormAddPost item="post" placeholder="your news..." />
       </div>
-      <ul className={s.posts}>{posts}</ul>
+
+      <ul className={s.posts}>{postsRender}</ul>
     </div>
   )
 }

@@ -1,35 +1,24 @@
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
+  grid-template-areas: "friends messages" "textarea textarea";
 }
 
 .dialogsItems {
   display: block;
+  grid-area: friends;
   & .active {
     color: goldenrod;
   }
 }
 
-.item {
-  display: block;
-}
-
 .messages {
   display: block;
+  grid-area: messages;
 }
 
-.dialog {
-  display: block;
-}
-
-.link {
-  color: black;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.activeLink {
-  color: gold;
-  font-size: 1.2rem;
-  text-decoration: none;
+.textarea {
+  grid-area: textarea;
+  padding-left: 16px;
+  padding-right: 88px;
 }

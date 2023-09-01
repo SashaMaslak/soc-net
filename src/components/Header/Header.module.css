@@ -1,10 +1,31 @@
 .header {
+  position: relative;
   grid-area: h;
   background-color: MediumSeaGreen;
   padding: 8px 16px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   width: 44px;
+}
+
+.siteName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-decoration: none;
+}
+
+.icons {
+  display: block;
+  margin-left: auto;
+}
+
+.iconSignIn {
+  margin-right: 12px;
 }

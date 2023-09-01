@@ -11,7 +11,7 @@ type PostPropsType = {
 
 export const Post = (props: PostPropsType) => {
   const [isAva] = useState(false)
-  console.log(props)
+
   return (
     <li className={s.post}>
       <div className={s.postFiled}>

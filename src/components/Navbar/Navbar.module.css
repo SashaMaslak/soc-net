@@ -28,3 +28,38 @@
   font-size: 1.2rem;
   text-decoration: none;
 }
+
+.friendList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.friendField {
+  text-align: center;
+  padding: 6px;
+  margin: 0;
+}
+
+.itemFriends {
+  margin-top: 24px;
+}
+
+.friendFieldLink {
+  text-decoration: none;
+  color: #212121;
+  cursor: pointer;
+}
+
+.friendFieldAva {
+  display: block;
+  box-sizing: border-box;
+}
+
+.friendFieldName {
+  font-size: 14px;
+  color: #fff;
+}

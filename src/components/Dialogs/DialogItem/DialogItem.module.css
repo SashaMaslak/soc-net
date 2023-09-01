@@ -1,0 +1,24 @@
+.item {
+  display: block;
+  padding: 8px;
+}
+
+.link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.activeLink {
+  color: gold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.friendFieldName {
+  color: #212121;
+  font-size: 16px;
+}
